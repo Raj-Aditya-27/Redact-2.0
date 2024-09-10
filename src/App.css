@@ -12,7 +12,7 @@
   
   .fade-enter-active {
     opacity: 1;
-    transition: opacity 400ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
   }
   
   .fade-exit {
@@ -21,6 +21,14 @@
   
   .fade-exit-active {
     opacity: 0;
-    transition: opacity 400ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
   }
   
+  :root {
+    --primary-color: #ff0000; /* Pure red color */
+    --secondary-color: #212429;
+    --text-light: #d1d5db;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --shadow-color: rgba(0, 0, 0, 0.3); /* Shadow color (not used now) */
+  }

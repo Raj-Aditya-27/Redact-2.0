@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition } from 'react-transition-group'; // Import CSSTransition
+import React, { useState, useEffect } from "react";
+import { CSSTransition } from "react-transition-group"; // Import CSSTransition
 import "./App.css";
 import Home from "./components/Home";
 import Loading from "./components/Loading";

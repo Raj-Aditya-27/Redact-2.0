@@ -12,6 +12,44 @@
   --shadow-color: rgba(0, 0, 0, 0.3); /* Shadow color (not used now) */
 }
 
+/* HeroSection transition */
+.hero-fade-enter {
+  opacity: 0;
+}
+
+.hero-fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.hero-fade-exit {
+  opacity: 1;
+}
+
+.hero-fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+/* Body transition */
+.body-fade-enter {
+  opacity: 0;
+}
+
+.body-fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
+}
+
+.body-fade-exit {
+  opacity: 1;
+}
+
+.body-fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
 .home {
   margin: 0px;
   padding: 0px;
@@ -37,7 +75,8 @@
 .logo {
   font-size: 2rem;
   color: #ff0000;
-  font-family: "Courier New", Courier, monospace; /* Elegant logo font */
+  font-family: "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif; /* Fallback fonts */
+  cursor: pointer;
 }
 
 .heroSection {

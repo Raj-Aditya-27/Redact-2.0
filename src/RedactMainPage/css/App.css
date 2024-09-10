@@ -1,0 +1,341 @@
+:root {
+  --primary-color: #ff0000; /* Pure red color */
+  --secondary-color: #212429;
+  --text-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --shadow-color: rgba(0, 0, 0, 0.3); /* Shadow color (not used now) */
+}
+
+/* Navbar-Section */
+
+.navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3%;
+  user-select: none;
+}
+
+.logo {
+  font-size: 2rem;
+  /* color: #1a2c52; */
+  /* color: #337ab7; */
+}
+
+.credential {
+  width: 20vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login,
+.free-trial {
+  all: unset;
+  width: 40%;
+  height: 80%;
+  padding: 2%;
+}
+
+.login {
+  border-right: 1px solid gray;
+  text-align: right;
+  padding-right: 3%;
+  font-weight: 700;
+}
+
+.free-trial {
+  border-radius: 10px;
+  text-align: center;
+  /* background-color: #1a2c52; */
+  background-color: #337ab7;
+  border-color: #337ab7;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.free-trial:hover {
+  background-color: #3379b7e8;
+}
+
+/* Body-Section */
+
+.body {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5%;
+  padding: 2%;
+}
+
+.inside-files {
+  /* background-color: #337ab7; */
+  height: 60vh;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #ff0000;
+}
+
+.input {
+  height: 90%;
+  width: 95%;
+  /* background-color: #337ab7; */
+  border: 1px dashed var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  row-gap: 10%;
+}
+
+.icons {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.scale {
+  width: 25%;
+  height: 7%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.high,
+.low,
+.medium {
+  height: 100%;
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  transition: 0.3s;
+  cursor: pointer;
+  font-family: "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif; /* Fallback fonts */
+}
+
+.low:hover,
+.medium:hover,
+.high:hover {
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+/* input {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+} */
+
+/* .bi-file-earmark-image {
+  color: #ffc107;
+} */
+
+.bi-filetype-pdf,
+.bi-file-earmark-lock {
+  color: #ff0000;
+}
+
+.bi-arrow-right-short {
+  color: white;
+}
+
+.file-input {
+  display: none; /* Hide the default file input */
+}
+.file-input-label {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  font-weight: bolder;
+}
+.file-input-label:hover {
+  background-color: rgba(255, 255, 255, 0.873);
+}
+.file-name {
+  margin-left: 10px;
+  font-style: italic;
+  color: white;
+}
+
+/* Additional features */
+
+.bi-x-circle {
+  cursor: pointer;
+}
+
+.convert {
+  height: 12%;
+  width: 17%;
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.convert:hover {
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+.selected {
+  border: 1px dashed white;
+}
+
+.blurred-background {
+  position: absolute;
+
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination li a:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.pagination li.active a {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.pagination li.disabled a {
+  color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Style for the div holding the spans and buttons */
+.text-container {
+  max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+  white-space: pre-wrap; /* Preserve spaces and newlines, and wrap text */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling if the content exceeds the div height */
+  padding: 10px; /* Add some padding around the content */
+  border: 1px solid #ccc; /* Optional: border for visibility */
+  border-radius: 8px; /* Rounded corners */
+  max-height: 400px; /* Set max height to prevent overflowing onto other elements */
+  background-color: #f9f9f9; /* Optional: Light background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for aesthetic */
+  height: 50vh;
+}
+
+/* Style for buttons inside the container */
+.text-container button {
+  background-color: #ff0000; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px 10px; /* Spacing inside the button */
+  cursor: pointer; /* Show pointer on hover */
+  margin: 0 3px; /* Add small margin to prevent buttons from sticking to text */
+  display: inline-block; /* Ensure buttons stay inline with the text */
+  font-size: 14px; /* Adjust font size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for buttons */
+.text-container button:hover {
+  background-color: #ff0000ba; /* Darker shade on hover */
+}
+
+/* Ensure spans take up full width and wrap text properly */
+.text-container span {
+  word-wrap: break-word; /* Break long words to prevent overflow */
+  display: inline; /* Ensure spans and buttons stay inline */
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+#unselected {
+  /* background-color: #e63946; */
+  background-color: white;
+  color: black;
+  border: 1px solid #ff0000; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 5px 10px; /* Spacing inside the button */
+  cursor: pointer; /* Show pointer on hover */
+  margin: 0 3px; /* Add small margin to prevent buttons from sticking to text */
+  display: inline-block; /* Ensure buttons stay inline with the text */
+  font-size: 14px; /* Adjust font size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#unselected:hover {
+  background-color: #ff0000;
+}
