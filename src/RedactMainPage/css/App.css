@@ -65,18 +65,17 @@
 /* Body-Section */
 
 .body {
-  height: 90vh;
+  /* background-color: lightblue; */
+  height: 80vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 5%;
   padding: 2%;
 }
 
 .inside-files {
-  /* background-color: #337ab7; */
   height: 60vh;
   width: 70vw;
   display: flex;
@@ -89,7 +88,7 @@
   font-size: 2rem;
   color: #ff0000;
 }
-
+/*  */
 .input {
   height: 90%;
   width: 95%;
@@ -135,6 +134,7 @@
   background-color: var(--primary-color);
   border-radius: 5rem;
   transition: 0.3s;
+  overflow: hidden;
   cursor: pointer;
   font-family: "Helvetica Neue", "Roboto", Helvetica, Arial, sans-serif; /* Fallback fonts */
 }
@@ -206,6 +206,7 @@
   border-radius: 5rem;
   transition: 0.3s;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .convert:hover {

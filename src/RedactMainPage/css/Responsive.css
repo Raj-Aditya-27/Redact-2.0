@@ -28,12 +28,20 @@
   .scale {
     width: 75%;
   }
+
+  .icons{
+    width: 50%;
+  }
 }
 
 
 @media (max-width: 1024px) {
     .navbar {
       padding: 0 4%;
+    }
+
+    .icons{
+      width: 50%;
     }
   
     
