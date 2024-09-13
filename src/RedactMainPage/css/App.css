@@ -221,9 +221,8 @@
 
 .blurred-background {
   position: absolute;
-
   z-index: 1;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 }
 
 .pagination {

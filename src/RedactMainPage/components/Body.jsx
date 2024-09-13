@@ -79,7 +79,7 @@ function Body() {
           <div className="heading">Redact: Your Data Protector</div>
           <div className="files">
             <div className="inside-files">
-              {animation && <MyLottieAnimation />}
+            {animation && <MyLottieAnimation />}
               <div className="input">
                 <div className="icons">
                   <i className="bi bi-filetype-pdf"></i>
